@@ -47,6 +47,7 @@ DROP TABLE IF EXISTS `Teams_dir`;
 CREATE TABLE `Teams_dir` (
   `team_key` INTEGER NOT NULL AUTO_INCREMENT,
   `team_name` VARCHAR(50) NULL DEFAULT NULL,
+  `team_rate` DOUBLE NOT NULL DEFAULT 1, -- коэффициент команды = MIN(колво сотрудников одной команды)/(колво сотрудников текущей команды)
   PRIMARY KEY (`team_key`)
 ) COMMENT 'Таблица-справочник команд тестирования';
 

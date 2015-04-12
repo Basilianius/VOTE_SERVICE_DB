@@ -87,6 +87,10 @@
 <row name="team_name" null="1" autoincrement="0">
 <datatype>VARCHAR</datatype>
 <default>NULL</default></row>
+<row name="team_rate" null="1" autoincrement="0">
+<datatype>DOUBLE</datatype>
+<default>NULL</default><comment>коэффициент команды = MIN(колво сотрудников одной команды)/(колво сотрудников текущей команды)</comment>
+</row>
 <key type="PRIMARY" name="">
 <part>team_key</part>
 </key>
