@@ -2,6 +2,9 @@
 -- Globals
 -- ---
 
+CREATE DATABASE IF NOT EXISTS Vote_Service_DB;
+USE Vote_Service_DB;
+
 -- SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
  SET FOREIGN_KEY_CHECKS=0;
 
